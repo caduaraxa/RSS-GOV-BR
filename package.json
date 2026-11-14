@@ -1,0 +1,23 @@
+{
+  "name": "rss-gov-br",
+  "version": "1.0.0",
+  "description": "Converte páginas de notícias dos portais gov.br em feeds RSS 2.0, com imagens",
+  "type": "module",
+  "main": "src/govbr-rss.js",
+  "exports": {
+    ".": "./src/govbr-rss.js",
+    "./handler": "./src/handler.js"
+  },
+  "bin": {
+    "rss-gov-br": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["rss", "gov.br", "plone", "feed", "noticias"],
+  "author": "Cadu Rolim",
+  "license": "MIT"
+}
